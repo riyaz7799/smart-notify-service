@@ -1,0 +1,26 @@
+{
+  "name": "notification-worker",
+  "version": "1.0.0",
+  "description": "Notification Worker Service",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest --detectOpenHandles --forceExit",
+    "test:watch": "jest --watch"
+  },
+  "keywords": ["notifications", "worker", "rabbitmq", "postgresql"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "pg": "^8.10.0",
+    "dotenv": "^16.3.1",
+    "uuid": "^9.0.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1"
+  }
+}
